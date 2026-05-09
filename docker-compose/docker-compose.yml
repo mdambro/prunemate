@@ -1,12 +1,11 @@
 services:
   prunemate:
-    image: anoniemerd/prunemate:latest # Supports amd64 and arm64
+    image: anoniemerd/prunemate:latest
     container_name: prunemate
-    #    ports:
-    #      - "8080:8080"
+    #ports:
+    #  - "8080:8080"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./logs:/var/log
       - prunemate_config_data:/config
     env_file:
       - .env
