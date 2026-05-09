@@ -27,7 +27,7 @@ El proyecto incluye una configuración lista para utilizar con Docker Compose. P
    PRUNEMATE_TIME_24H=true
    # Opcional: Habilitar autenticación de usuario
    PRUNEMATE_AUTH_USER=admin
-   PRUNEMATE_AUTH_PASSWORD_HASH=admin_base64_pass
+   PRUNEMATE_AUTH_PASSWORD_HASH=c2NyeXB0OjMyNzY4Ojg6MSRKaUY1WVZQZnk4OVJURVN0JDhiMWUwZTg0ZTc1MDIyNzI1M2JiOTlmMTJhNTExNjAyZjc5YzA1MTY2NDQyNjFiODQzZWE2ZGZlZjIxN2QxM2E5ZDQ3MGUwMDRlMDFlYTBkMzU5MTM0ODU1OWU2NDllZGE5ODI3NWZlMzE3NmMzYzM4OWY3ZmQxZjYyZTFhZWJk
    ```
 
 3. (Opcional) Si necesitas acceder a la interfaz web, asegúrate de descomentar el mapeo de puertos en tu archivo `docker-compose.yml`:
@@ -41,6 +41,6 @@ El proyecto incluye una configuración lista para utilizar con Docker Compose. P
    docker-compose up -d
    ```
 
-Una vez ejecutado, PruneMate estará interactuando con el socket de Docker para realizar sus tareas. Los archivos de configuración persistirán en el volumen `prunemate_config_data_volume` y los logs podrán verse en el directorio `./logs` local.
+Una vez ejecutado, PruneMate estará interactuando con el socket de Docker para realizar sus tareas. Los archivos de configuración persistirán en el volumen `prunemate_config_data_volume`
 
 Si habilitaste el mapeo de puertos en el paso 3, podrás acceder a la interfaz web ingresando a: [http://localhost:8080](http://localhost:8080).
